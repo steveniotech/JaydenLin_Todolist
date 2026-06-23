@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>My To-Do List</h1>
+    <button class="deleteAll" id="deleteAll">Delete Everything</button>
+    <button class="sortAlphabetical" id="sortAlphabetical">
+      Sort Alphabetically
+    </button>
+    <button class="sortCompletion" id="sortCompletion">
+      Sort based on Completion
+    </button>
+    <button class="toggleComplete" id="toggleComplete">
+      Toggle Completed Tasks Visibility
+    </button>
+    <button class="toggleIncomplete" id="toggleIncomplete">
+      Toggle Incompleted Tasks Visibility
+    </button>
+    <button id="showAll">Show all Tasks</button>
+    <div class="container">
+      <h2>Tasks</h2>
+      <div class="inputForm">
+        <label>Insert task title</label>
+        <input type="text" id="inputTitle" name="inputTitle" />
+        <label>Insert task information</label>
+        <input type="text" id="inputInfo" name="inputInfo" />
+        <button id="inputSubmit">Submit Task Form</button>
+        <label>--- Group section ---</label>
+        <input
+          type="text"
+          id="groupInputTitle"
+          name="groupInputTitle"
+          placeholder="insert Group Title"
+        />
+        <input
+          type="text"
+          id="groupInputDescription"
+          name="groupInputDescription"
+          placeholder="insert Group Description"
+        />
+        <button id="inputSubmitGroup">Submit Group Form</button>
+      </div>
+      <div class="tasks" id="tasks"></div>
+    </div>
+  </body>
+</html>
